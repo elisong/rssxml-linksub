@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang-"en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ title }}</title>
+    <style>
+      #mySidenav a {
+        position: absolute;
+        left: -720px;
+        transition: 0.3s;
+        padding: 15px;
+        width: 800px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        border-radius: 0 5px 5px 0;
+      }
+
+      #mySidenav a:hover {
+        left: 0;
+      }
+
+      #GET {
+        top: 80px;
+        background-color: #2196f3;
+      }
+
+      #POST {
+        top: 145px;
+        background-color: #f44336;
+      }
+
+      #STATIC {
+        top: 210px;
+        background-color: #4caf50;
+      }
+
+      #SCHEMA {
+        top: 275px;
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="https://rssxml-linksub.herokuapp.com/api/?rss=https://rssxml-linksub.herokuapp.com/static/demo.xml" id="GET"
+        >GET using remote xml: `/api/?rss=&lt;remote-xml-url/&gt;[&tags=img|a]`  👇</a
+      >
+      <a href="#" id="POST"
+        >POST using local xml: `/api/` with data=etree.tostring(...)</a
+      >
+      <a href="https://rssxml-linksub.herokuapp.com/static/demo.xml" id="STATIC">Get demo xml file: `/static/demo.xml` 👇</a>
+      <a href="https://rssxml-linksub.herokuapp.com/schema/" id="SCHEMA">Get api schema: `/schema/` 👇</a>
+    </div>
+  </body>
+</html>
