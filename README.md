@@ -1,5 +1,7 @@
 # RSS XML Link Substitution - Python Api
 
+> background: [d.cosx.org - 将 RSS 源中的相对链接转化为绝对链接](https://d.cosx.org/d/421979-rss)
+
 ## Try online app
 
 - https://rssxml-linksub.herokuapp.com
